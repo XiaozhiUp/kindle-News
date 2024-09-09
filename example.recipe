@@ -5,9 +5,9 @@ from calibre.web.feeds.news import BasicNewsRecipe
 
 
 class Example(BasicNewsRecipe):
-    title = 'VOA Learning English'
+    title = 'test'
     description = 'This is example of Calibre recipe.'
-    language = 'en'
+    language = 'zh'
     encoding = 'utf-8'
 
     oldest_article = 1
@@ -23,15 +23,7 @@ class Example(BasicNewsRecipe):
 
     siteurl = 'https://learningenglish.voanews.com'
     feed_urls = {
-        'AS IT IS': 'https://learningenglish.voanews.com/z/3521',
-        'ARTS & CULTURE': 'https://learningenglish.voanews.com/z/986',
-        'AMERICAN STORIES': 'https://learningenglish.voanews.com/z/1581',
-        'ASK A TEACHER': 'https://learningenglish.voanews.com/z/5535',
-        'EVERYDAY GRAMMAR': 'https://learningenglish.voanews.com/z/4456',
-        'EDUCATION': 'https://learningenglish.voanews.com/z/959',
-        'HEALTH & LIFESTYLE': 'https://learningenglish.voanews.com/z/955',
-        'SCIENCE & TECHNOLOGY': 'https://learningenglish.voanews.com/z/1579',
-        'WORDS AND THEIR STORIES': 'https://learningenglish.voanews.com/z/987',
+        'zhihu daily': 'https://rsshub.app/zhihu/daily',
     }
 
     def parse_index(self):
