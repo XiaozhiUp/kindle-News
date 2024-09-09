@@ -1,1 +1,14 @@
+#!/usr/bin/env python2
+# vim:fileencoding=utf-8
+from __future__ import unicode_literals, division, absolute_import, print_function
+from calibre.web.feeds.news import BasicNewsRecipe
 
+class AdvancedUserRecipe1504764482(BasicNewsRecipe):
+    title          = '人民日报'
+    oldest_article = 1
+    max_articles_per_feed = 10
+
+    feeds          = [
+        ('时政新闻', 'http://www.people.com.cn/rss/politics.xml'),
+        ('社会新闻', 'http://www.people.com.cn/rss/society.xml'),
+    ]
