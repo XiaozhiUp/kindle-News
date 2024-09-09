@@ -5,7 +5,7 @@ from calibre.web.feeds.news import AutomaticNewsRecipe
 class BasicUserRecipe1725902511(AutomaticNewsRecipe):
     title          = '我的新闻源'
     oldest_article = 1
-    max_articles_per_feed = 10
+    max_articles_per_feed = 20
     auto_cleanup   = True
 
     feeds          = [
